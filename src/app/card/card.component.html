@@ -1,0 +1,7 @@
+<div class="">
+  <div class="card-layout" (click)="toggleStatus()" [ngClass]="{'active': card.status=='active', 
+    'inactive': card.status=='inactive' && !showimg }">
+    <span class="card-order" *ngIf="card.status=='active'">{{card.id}}</span>
+    <img class="image-card" *ngIf="showimg && card.status == 'inactive'" [attr.src]="card.url" alt="image">
+  </div>
+</div>
