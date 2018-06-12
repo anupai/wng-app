@@ -1,0 +1,9 @@
+<div class="row">
+  <div *ngFor="let card of cards">
+    <app-card [card]="card" [showimg]="showImg"></app-card>
+  </div>
+</div>
+<div class="row row-space">
+  <button type="button" class="btn  btn-outline-primary btn-space" (click)="showImage()">Show Image</button>
+  <button type="button" class="btn  btn-outline-primary btn-space" (click)="addCard()">Add more card</button>
+</div>

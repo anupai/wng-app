@@ -1,0 +1,11 @@
+{
+    "/image/*":{
+        "target": "http://shibe.online/",
+        "pathRewrite": {
+            "^/image": ""
+          },
+        "secure": false,
+        "logLevel": "debug",
+        "changeOrigin":true
+    }
+}
